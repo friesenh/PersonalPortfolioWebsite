@@ -16,6 +16,7 @@ function Navbar() {
     <div className="navbar" id={expandNavbar ? "open" : "close"}>
         <div className="toggleButton">
             <button 
+              /* open expanded navbar if it was clicked when closed, and vice versa */
               onClick={() => {
                 setExpandNavbar((prev) => !prev);
               }}
